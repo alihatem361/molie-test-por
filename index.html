@@ -353,28 +353,58 @@
     <!--            href="assets/css/pages/home.min.css?v=-->
     <!--"-->
     <!--    />-->
-    <link
-      rel="stylesheet"
-      href="assets/flaticon/flaticon_oxford.css?v=3.1.0.43"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/fonts/alexandria/stylesheet.css?v=3.1.0.43"
-    />
+    <!-- Critical CSS loaded normally -->
     <link
       rel="stylesheet"
       href="assets/plugins/bootstrap/css/bootstrap.rtl.min.css?v=3.1.0.43"
     />
+    <link rel="stylesheet" href="assets/css/app.css?v=3.1.0.43" />
+
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link
+      rel="stylesheet"
+      href="assets/flaticon/flaticon_oxford.css?v=3.1.0.43"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fonts/alexandria/stylesheet.css?v=3.1.0.43"
+      media="print"
+      onload="this.media='all'"
+    />
     <link
       rel="stylesheet"
       href="assets/plugins/swiper/swiper-bundle.min.css?v=3.1.0.43"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/pages/profile.css?v=3.1.0.43"
+      media="print"
+      onload="this.media='all'"
     />
 
-    <link rel="stylesheet" href="assets/css/app.css?v=3.1.0.43" />
+    <!-- Fallback for browsers that don't support JS -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="assets/flaticon/flaticon_oxford.css?v=3.1.0.43"
+      />
+      <link
+        rel="stylesheet"
+        href="assets/fonts/alexandria/stylesheet.css?v=3.1.0.43"
+      />
+      <link
+        rel="stylesheet"
+        href="assets/plugins/swiper/swiper-bundle.min.css?v=3.1.0.43"
+      />
+      <link rel="stylesheet" href="assets/css/pages/profile.css?v=3.1.0.43" />
+    </noscript>
+
     <!--<link rel="stylesheet" href="assets/css/rtl.css?v=-->
     <!--" />-->
-
-    <link rel="stylesheet" href="assets/css/pages/profile.css?v=3.1.0.43" />
 
     <style>
       .search_form {
