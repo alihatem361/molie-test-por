@@ -3598,7 +3598,7 @@
       src="assets/plugins/validation/jquery.validate.min.js?v=3.1.0.42"
     ></script>
     <script async src="assets/js/carousel.js?v=3.1.0.42"></script>
-    <script>
+    <script async>
       document.addEventListener("DOMContentLoaded", function () {
         setInterval(function () {
           var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
@@ -3632,7 +3632,7 @@
       async
       src="./assets/plugins/rater-js/jquery.star-rating.js?v=3.1.0.42"
     ></script>
-    <script>
+    <script async>
       window.Toast = Swal.mixin({
         toast: true,
         position: "top-end",
@@ -3718,7 +3718,7 @@
         });
       });
     </script>
-    <script defer>
+    <script async>
       // Add focus handler for search offcanvas
       $("#search_offcanvas").on("shown.bs.offcanvas", function () {
         $("#overlay_key").focus();
@@ -3758,7 +3758,7 @@
         }
       });
     </script>
-    <script defer>
+    <script async>
       $(document).on("click", "#categoryButton", function () {
         let categoryUrl = $("#categorySelector").val();
         if (categoryUrl) {
