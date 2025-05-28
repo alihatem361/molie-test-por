@@ -136,7 +136,7 @@
     />
 
     <!--START Sitelinks Searchbox-->
-    <script type="application/ld+json">
+    <script type="application/ld+json" async>
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -443,8 +443,6 @@
       .search_form .input-wrapper.input-loading .search-loader {
         display: block;
       }
-    </style>
-    <style>
       .course-suggestions-list {
         margin-top: 10px;
         padding: 0;
@@ -537,9 +535,7 @@
       .course-suggestion-item:hover .course-icon {
         transform: scale(1.1);
       }
-    </style>
 
-    <style>
       .color-green {
         color: #28aa5c;
       }
@@ -565,8 +561,6 @@
         font-size: 1.3rem;
         min-width: 155px;
       }
-    </style>
-    <style>
       @media screen and (max-width: 1430px) {
         .header {
           font-size: 0.7em !important;
@@ -620,11 +614,36 @@
       .category_card_style1.shadow-light:hover .card_title {
         color: #000000;
       }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      img[width][height] {
+        display: block;
+      }
+      .image {
+        display: block;
+        overflow: hidden;
+      }
+      /* Only target the hero image in banner section */
+      .banner_section > .container > .row > .col-xl-4 .image img {
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+      }
+      @media (max-width: 1199px) {
+        .banner_section > .container > .row > .col-xl-4 .image img {
+          width: 100%;
+          height: auto;
+          max-height: 450px;
+        }
+      }
     </style>
     <!--<script src="assets/js/firebase.js?v=-->
     <!--" defer></script>-->
     <!-- Google Tag Manager -->
-    <script>
+    <script async>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -639,7 +658,7 @@
     <!-- End Google Tag Manager -->
 
     <!-- Facebook Pixel Code -->
-    <script>
+    <script async>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -677,7 +696,7 @@
     <!-- End Facebook Pixel Code -->
 
     <!-- Facebook Pixel Code -->
-    <script defer>
+    <script async>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -714,7 +733,7 @@
     <!-- DO NOT MODIFY -->
     <!-- End Facebook Pixel Code -->
     <!-- Facebook Pixel Code -->
-    <script>
+    <script async>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -752,7 +771,7 @@
     <!-- End Facebook Pixel Code -->
 
     <!-- Facebook Pixel Code -->
-    <script defer>
+    <script async>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -829,7 +848,7 @@
     <!--</script>-->
     <!-- End Snap Pixel Code -->
 
-    <script defer>
+    <script async>
       !(function (w, d, t) {
         w.TiktokAnalyticsObject = t;
         var ttq = (w[t] = w[t] || []);
@@ -881,7 +900,7 @@
       })(window, document, "ttq");
     </script>
     <!-- Google Tag Manager -->
-    <script defer>
+    <script async>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -895,32 +914,6 @@
     </script>
     <!-- End Google Tag Manager -->
     <!-- Prevent layout shifts with images -->
-    <style defer>
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      img[width][height] {
-        display: block;
-      }
-      .image {
-        display: block;
-        overflow: hidden;
-      }
-      /* Only target the hero image in banner section */
-      .banner_section > .container > .row > .col-xl-4 .image img {
-        width: 450px;
-        height: 450px;
-        object-fit: cover;
-      }
-      @media (max-width: 1199px) {
-        .banner_section > .container > .row > .col-xl-4 .image img {
-          width: 100%;
-          height: auto;
-          max-height: 450px;
-        }
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
